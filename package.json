@@ -16,20 +16,15 @@
   "engine": [
     "node >= 0.10.11"
   ],
-  "directories": {
-    "bin": "./bin"
-  },
   "keywords": [
-    "redis",
-    "configuration",
-    "file",
-    "read",
-    "write"
+    "stream",
+    "lines",
+    "parse",
+    "read"
   ],
   "scripts": {
     "docs": "npm run readme",
     "readme": "mdp --force -v",
-    "pretest": "mkdir -p ./target",
     "test": "NODE_ENV=test istanbul cover --root ./lib _mocha -- test/spec"
   },
   "mdp": {

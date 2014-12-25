@@ -2,7 +2,7 @@ var expect = require('chai').expect
   , fs = require('fs')
   , LineReader = require('../..');
 
-describe('streamlines:', function() {
+describe('stream-lines:', function() {
 
   it('line reader should handle chunks', function(done) {
 
