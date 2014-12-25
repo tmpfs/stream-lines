@@ -1,7 +1,6 @@
 var expect = require('chai').expect
-  , conf = require('../..')
   , fs = require('fs')
-  , LineReader = conf.LineReader;
+  , LineReader = require('../..');
 
 describe('streamlines:', function() {
 
@@ -31,6 +30,7 @@ describe('streamlines:', function() {
     i = 0;
     function writeChunk() {
       var chunk = buffers[i];
+      //console.dir('writing chunk: ' + chunk);
       if(!chunk) {
         lines.end();
         done();

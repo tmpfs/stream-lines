@@ -1,8 +1,7 @@
 var expect = require('chai').expect
-  , streamline = require('../..')
   , fs = require('fs')
-  , LineReader = streamline.LineReader
-  , LineEmitter = streamline.LineEmitter;
+  , LineReader = require('../..')
+  , LineEmitter = LineReader.LineEmitter;
 
 describe('stream-lines:', function() {
 
@@ -21,8 +20,10 @@ describe('stream-lines:', function() {
       expect(received).to.eql(src);
       done();
     }
+
     emitter.on('lines', onLines);
     lines.on('finish', onFinish);
+
     stream.pipe(lines).pipe(emitter);
   });
 });
