@@ -3,7 +3,7 @@ var expect = require('chai').expect
   , fs = require('fs')
   , LineReader = conf.LineReader;
 
-describe('jsr-conf:', function() {
+describe('streamlines:', function() {
 
   it('line reader should handle chunks', function(done) {
 
