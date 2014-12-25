@@ -1,0 +1,54 @@
+{
+  "name": "stream-lines",
+  "description": "Line transform stream, reads bytes writes arrays of lines.",
+  "version": "0.1.0",
+  "author": "muji <noop@xpm.io>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/freeformsystems/stream-lines.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "~1.10.0",
+    "istanbul": "~0.3.2",
+    "mocha": "~2.0.1"
+  },
+  "engine": [
+    "node >= 0.10.11"
+  ],
+  "directories": {
+    "bin": "./bin"
+  },
+  "keywords": [
+    "redis",
+    "configuration",
+    "file",
+    "read",
+    "write"
+  ],
+  "scripts": {
+    "docs": "npm run readme",
+    "readme": "mdp --force -v",
+    "pretest": "mkdir -p ./target",
+    "test": "NODE_ENV=test istanbul cover --root ./lib _mocha -- test/spec"
+  },
+  "mdp": {
+    "title": "Stream Lines",
+    "pedantic": true,
+    "include": "doc/readme",
+    "require": "lib",
+    "links": "links.md",
+    "toc": "Table of Contents",
+    "base": "https://github.com/freeformsystems/stream-lines",
+    "partial": [
+      {
+        "inc": [
+          "introduction.md",
+          "install.md",
+          "developer.md",
+          "license.md"
+        ]
+      }
+    ]
+  }
+}
