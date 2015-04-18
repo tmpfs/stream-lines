@@ -7,7 +7,9 @@
     "type": "git",
     "url": "git://github.com/freeformsystems/stream-lines.git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "through3": "~1.1.1"
+  },
   "devDependencies": {
     "chai": "~1.10.0",
     "istanbul": "~0.3.2",
