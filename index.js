@@ -1,1 +1,1 @@
-module.exports = require('./lib/line-reader');
+module.exports = require('./lib/line-stream');

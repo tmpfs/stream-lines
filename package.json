@@ -7,6 +7,7 @@
     "type": "git",
     "url": "git://github.com/freeformsystems/stream-lines.git"
   },
+  "main": "lib/line-stream.js",
   "dependencies": {
     "through3": "~1.1.1"
   },
