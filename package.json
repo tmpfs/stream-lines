@@ -28,7 +28,8 @@
   "scripts": {
     "docs": "npm run readme",
     "readme": "mdp --force -v",
-    "test": "NODE_ENV=test istanbul cover --root ./lib _mocha -- test/spec"
+    "test": "NODE_ENV=test mocha -- test/spec",
+    "cover": "NODE_ENV=test istanbul cover --root ./lib _mocha -- test/spec"
   },
   "mdp": {
     "title": "Stream Lines",
