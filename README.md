@@ -13,6 +13,10 @@ Table of Contents
 Stream Lines
 ============
 
+[<img src="https://travis-ci.org/tmpfs/stream-lines.svg" alt="Build Status">](https://travis-ci.org/tmpfs/stream-lines)
+[<img src="http://img.shields.io/npm/v/stream-lines.svg" alt="npm version">](https://npmjs.org/package/stream-lines)
+[<img src="https://coveralls.io/repos/tmpfs/stream-lines/badge.svg?branch=master&service=github&v=1" alt="Coverage Status">](https://coveralls.io/github/tmpfs/stream-lines?branch=master).
+
 Line transform stream, reads bytes writes arrays of lines.
 
 Requires [node](http://nodejs.org) and [npm](http://www.npmjs.org).
