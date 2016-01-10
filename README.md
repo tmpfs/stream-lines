@@ -5,6 +5,7 @@ Table of Contents
   * [Install](#install)
   * [Developer](#developer)
     * [Test](#test)
+    * [Cover](#cover)
     * [Documentation](#documentation)
     * [Readme](#readme)
   * [License](#license)
@@ -19,7 +20,7 @@ Requires [node](http://nodejs.org) and [npm](http://www.npmjs.org).
 ## Install
 
 ```
-npm i stream-lines
+npm i stream-lines --save
 ```
 
 ## Developer
@@ -30,6 +31,14 @@ Tests are not included in the package, clone the repository:
 
 ```
 npm test
+```
+
+### Cover
+
+To generate code coverage run:
+
+```
+npm run cover
 ```
 
 ### Documentation

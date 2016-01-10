@@ -1,5 +1,5 @@
 ## Install
 
 ```
-npm i stream-lines
+npm i stream-lines --save
 ```
