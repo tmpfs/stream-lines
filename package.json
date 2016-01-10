@@ -3,18 +3,20 @@
   "description": "Line transform stream, reads bytes writes arrays of lines.",
   "version": "1.1.5",
   "author": "muji <noop@xpm.io>",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/freeformsystems/stream-lines.git"
+    "url": "git://github.com/tmpfs/stream-lines.git"
   },
   "main": "lib/line-stream.js",
   "dependencies": {
     "through3": "~1.1.1"
   },
   "devDependencies": {
-    "chai": "~1.10.0",
-    "istanbul": "~0.3.2",
-    "mocha": "~2.0.1"
+    "chai": "~3.4.1",
+    "coveralls": "~2.11.6",
+    "istanbul": "~0.4.1",
+    "mocha": "~2.3.4"
   },
   "engine": [
     "node >= 0.10.11"
@@ -38,7 +40,7 @@
     "require": "lib",
     "links": "links.md",
     "toc": "Table of Contents",
-    "base": "https://github.com/freeformsystems/stream-lines",
+    "base": "https://github.com/tmpfs/stream-lines",
     "partial": [
       {
         "inc": [
