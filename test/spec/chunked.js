@@ -1,5 +1,4 @@
-var expect = require('chai').expect
-  , fs = require('fs')
+var fs = require('fs')
   , LineReader = require('../..');
 
 describe('stream-lines:', function() {
@@ -20,8 +19,10 @@ describe('stream-lines:', function() {
 
     buf = Buffer.concat([buf, longline])
 
-    var len = buf.length / size;
-    if(buf.length % size !== 0) len++;
+    len = buf.length / size;
+    if(buf.length % size !== 0) {
+      len++;
+    }
 
     for(i = 0;i < len;i++) {
       buffers.push(buf.slice(i * size, (i * size) + size));

@@ -28,6 +28,7 @@
     "read"
   ],
   "scripts": {
+    "lint": "jshint . && jscs .",
     "docs": "npm run readme",
     "readme": "mdp --force -v",
     "test": "NODE_ENV=test mocha -- test/spec",

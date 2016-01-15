@@ -1,7 +1,6 @@
 var expect = require('chai').expect
   , fs = require('fs')
-  , LineReader = require('../..')
-  //, LineEmitter = LineReader.LineEmitter;
+  , LineReader = require('../..');
 
 describe('stream-lines:', function() {
 

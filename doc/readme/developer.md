@@ -16,6 +16,14 @@ To generate code coverage run:
 npm run cover
 ```
 
+### Lint
+
+Run the source tree through [jshint][] and [jscs][]:
+
+```
+npm run lint
+```
+
 ### Documentation
 
 To generate all documentation:
