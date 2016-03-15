@@ -9,12 +9,34 @@ describe('stream-lines:', function() {
 
     function onLines(lines) {
       received = received.concat(lines);
+    }
+
+    function onFinish() {
       expect(received).to.eql(['1', '2', '3']);
       done();
     }
 
     lines.on('lines', onLines);
+    lines.on('finish', onFinish);
     lines.end('1\n2\n3');
+  });
+
+  it('line reader should handle simple buffer input', function(done) {
+    var lines = new LineReader()
+      , received = [];
+
+    function onLines(lines) {
+      received = received.concat(lines);
+    }
+
+    function onFinish() {
+      expect(received).to.eql(['1', '2', '3']);
+      done();
+    }
+
+    lines.on('lines', onLines);
+    lines.on('finish', onFinish);
+    lines.end(new Buffer('1\n2\n3'));
   });
 
 });
