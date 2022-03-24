@@ -1,14 +1,14 @@
 {
   "name": "stream-lines",
   "description": "Line transform stream, reads bytes writes arrays of lines.",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": "muji <noop@xpm.io>",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git://github.com/tmpfs/stream-lines.git"
   },
-  "main": "lib/line-stream.js",
+  "main": "index.js",
   "dependencies": {
     "through3": "~1.1.1"
   },
